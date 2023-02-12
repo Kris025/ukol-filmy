@@ -14,3 +14,42 @@ html {
   height: 1em;
   margin-right: 0.3em;
 }
+
+.movieWrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background: pink;
+  padding: 20px;
+  column-gap: 30px;
+}
+.movieWrapper .rating {
+  position: absolute;
+  background: orange;
+  width: 150px;
+  padding: 3px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  top: 12px;
+  left: -40px;
+  transform: rotate(-30deg);
+}
+
+.movieWrapper .poster {
+  width: 160px;
+}
+
+.movieWrapper .stats {
+  display: flex;
+  flex-flow: column;
+  row-gap: 4px;
+  flex: 1 1 0;
+  background: lightblue;
+}
+
+.movieWrapper .stats .title {
+  color: red;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
