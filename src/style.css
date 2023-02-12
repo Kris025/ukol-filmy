@@ -42,6 +42,8 @@ html {
 
 .movieWrapper .poster {
   width: 160px;
+  height: 240px;
+  object-fit: cover;
 }
 
 .movieWrapper .stats {
@@ -53,12 +55,31 @@ html {
 
 .movieWrapper .stats .title {
   color: red;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 0 16px 0;
+}
+.movieWrapper .stats .subTitle {
+  color: red;
+  font-size: 16px;
+  margin: 16px 0 8px 0;
+}
+.movieWrapper .castWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
 }
 
 .movieList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 2px;
+}
+
+.actor .name {
+  display: block;
+  font-size: 16px;
+}
+.actor .as {
+  display: block;
+  color: gray;
 }

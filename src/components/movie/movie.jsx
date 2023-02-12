@@ -1,4 +1,5 @@
 import React from "react";
+import {Actor} from "../actor/actor";
 
 export const Movie = ({ title, poster, year, rating, director, genre, cast }) => (
     <div className={"movieWrapper"}>
@@ -11,6 +12,13 @@ export const Movie = ({ title, poster, year, rating, director, genre, cast }) =>
             <div><b>Rok vydání:</b> {year}</div>
             <div><b>Žánr:</b> {genre}</div>
             <div><b>Režie:</b> {director}</div>
+            <h3 className={"subTitle"}>V hlavních rolích: </h3>
+            <div className={"castWrap"}>
+                {cast.map(castMember => <Actor
+                    name={castMember.name}
+                    as={castMember.as}
+                />)}
+            </div>
         </div>
     </div>
 );
