@@ -2,16 +2,13 @@ import React from 'react';
 import {render} from 'react-dom';
 import './style.css';
 import {Header} from "./components/header/header";
-import {Movie} from "./components/movie/movie";
+import {movies} from "./movies";
+import {MovieList} from "./components/movie-list/movie-list";
 
 const App = () => (
   <>
     <Header />
-    <Movie
-        title={"asd"}
-        poster={"pulp-fiction.jpg"}
-        rating={8.9}
-    />
+    <MovieList movies={movies} />
   </>
 );
 

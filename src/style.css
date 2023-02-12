@@ -6,8 +6,12 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
+  background: #eee;
 }
 
+.mainTitle {
+  text-align: center;
+}
 .logo {
   display: inline-block;
   width: auto;
@@ -19,7 +23,7 @@ html {
   position: relative;
   display: flex;
   overflow: hidden;
-  background: pink;
+  background: #fff;
   padding: 20px;
   column-gap: 30px;
 }
@@ -45,11 +49,16 @@ html {
   flex-flow: column;
   row-gap: 4px;
   flex: 1 1 0;
-  background: lightblue;
 }
 
 .movieWrapper .stats .title {
   color: red;
   font-size: 24px;
   margin: 0 0 16px 0;
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
 }
